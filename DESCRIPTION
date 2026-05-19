@@ -1,0 +1,24 @@
+Package: HeartDiseaseMLFinalProject
+Type: Project
+Title: Heart Disease Classification Machine Learning Project
+Version: 0.1.0
+Authors@R: c(
+    person("Sabrina", "Wu", role = c("aut", "cre")),
+    person("Mandy", "Pu", role = "aut")
+)
+Description: R Markdown analysis comparing logistic regression, SVM, and XGBoost for binary heart disease classification using the UCI Heart Disease dataset.
+License: MIT
+Encoding: UTF-8
+Imports:
+    forcats,
+    xgboost,
+    caret,
+    pROC,
+    corrplot,
+    tidyverse,
+    kernlab,
+    gridExtra,
+    ggplot2,
+    gtsummary,
+    rmarkdown,
+    knitr
