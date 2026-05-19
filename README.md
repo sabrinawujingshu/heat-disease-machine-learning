@@ -54,29 +54,6 @@ The rendered HTML report will be written to `docs/index.html`.
 
 You can also open `analysis/heart_disease_ml_report.Rmd` and click **Knit** in RStudio.
 
-## Publishing to GitHub
-
-After downloading/unzipping this repository, run the following commands from the repository folder:
-
-```bash
-git init
-git add .
-git commit -m "Initial heart disease ML project"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/heart-disease-ml-final-project.git
-git push -u origin main
-```
-
-To publish the rendered report with GitHub Pages:
-
-1. Go to the GitHub repository settings.
-2. Open **Pages**.
-3. Set the source to **Deploy from a branch**.
-4. Choose the `main` branch and the `/docs` folder.
-5. Save.
-
-The included GitHub Actions workflow can render `analysis/heart_disease_ml_report.Rmd` into `docs/index.html` on push. If package installation takes too long on GitHub Actions, render locally with `source("scripts/render_report.R")`, commit the generated `docs/index.html`, and push again.
-
 ## Data citation
 
 Janosi A, Steinbrunn W, Pfisterer M, Detrano R. Heart Disease [Dataset]. UCI Machine Learning Repository. 1989. doi:10.24432/C52P4X.
